@@ -21,12 +21,16 @@ async function getTokenMetadata() {
         tokenName = token.name;
         tokenSymbol = token.symbol;
         tokenLogo = token.logoURI;
+        totalSupply = token.decimals;
+        tokenWebsite = token.website;
 
         console.log("Token Name:", tokenName);
         console.log("Token Symbol:", tokenSymbol);
         console.log("Token Logo:", tokenLogo);
+        console.log("Token Supply Decimal:", totalSupply);
+        console.log("Token Official Website:", tokenWebsite);
     } else {
-        console.log("Token not found in the token list.");
+        console.log("Token not found in the Solona Mainnet token list.");
     }
 }
 
