@@ -2,7 +2,8 @@ const { PublicKey } = require("@solana/web3.js");
 const { ENV, TokenListProvider } = require("@solana/spl-token-registry");
 
 async function getTokenMetadata() {
-
+// Change this address to any solan token
+// The example is that of Cope coin
     const mintAddress = new PublicKey("8HGyAAB1yoM1ttS7pXjHMa3dukTFGQggnFFH3hJZgzQh");
 
     let tokenName;
