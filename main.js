@@ -22,7 +22,7 @@ async function getTokenMetadata() {
         tokenSymbol = token.symbol;
         tokenLogo = token.logoURI;
         totalSupply = token.decimals;
-        tokenWebsite = token.website;
+        tokenWebsite = token.extensions;
 
         console.log("Token Name:", tokenName);
         console.log("Token Symbol:", tokenSymbol);
